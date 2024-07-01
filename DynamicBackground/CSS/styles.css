@@ -1,0 +1,228 @@
+@font-face{
+      font-family: Lato;
+      src: url(../Fonts/Lato-Regular.ttf);
+}
+:root{
+      --card-header-background: #E92C7C;
+      --button-color: #E92C7C;
+      --button-hover-color: #EC449B;
+}
+*, *::before, *::after{
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-decoration: none;
+}
+
+body{
+      background: #464F65;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Lato;
+      flex-direction: column;
+      gap: 40px;
+}
+
+.wrapper{
+      position: relative;
+      width: 400px;
+      min-height: 400px;
+      background: #FFF;
+      box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+}
+
+.wrapper .imageBx{
+      position: relative;
+      width: 100%;
+      height: 150px;
+      background: var(--card-header-background);
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      border-radius: 20px 20px 0 0;
+      -webkit-border-radius: 20px 20px 0 0;
+      -moz-border-radius: 20px 20px 0 0;
+      -ms-border-radius: 20px 20px 0 0;
+      -o-border-radius: 20px 20px 0 0;
+}
+      
+.wrapper .imageBx img{
+      width: 150px;
+      pointer-events: none;
+      height: 150px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -25%);
+      -webkit-transform: translate(-50%, -25%);
+      -moz-transform: translate(-50%, -25%);
+      -ms-transform: translate(-50%, -25%);
+      -o-transform: translate(-50%, -25%);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      border: 3px solid #FFF;
+      box-shadow: 0 0 0 3px var(--card-header-background);
+}
+
+.wrapper .userData{
+      margin-top: 45px;
+      text-align: center;
+}
+
+.wrapper .social-media ul{
+      display: flex;
+      gap: 30px;
+      font-size: 25px;
+}
+
+.wrapper .social-media ul li{
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+}
+
+.wrapper .social-media ul li:hover{
+      scale: 1.2;
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+}
+
+.wrapper .social-media ul li a{
+      color: var(--clr);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.wrapper .social-media ul li a i{
+      text-shadow: 
+      0px 0px 20px var(--clr);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+}
+
+.wrapper .contact-btn{
+      display: flex;
+      gap: 20px;
+}
+
+.wrapper .contact-btn button{
+      border: none;
+      outline: none;
+      padding: 10px 40px;
+      cursor: pointer;
+      background: var(--button-color);
+      color: #FFF;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+}
+
+.wrapper .contact-btn button:hover{
+      scale: 1.1;
+      background: var(--button-hover-color);
+}
+
+.wrapper .analytics{
+      display: flex;
+      padding-bottom: 20px;
+}
+
+.wrapper .analytics .data{
+      border-right: 1px solid #3a3a3a;
+      padding: 2px 15px;
+}
+.wrapper .analytics .data:last-child{
+      border-right: none;
+}
+
+.wrapper .analytics .data i{
+      color: var(--clr);
+      font-size: 18px;
+}
+
+.themes{
+      background: #FFF;
+      width: 400px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
+      text-align: center;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+}
+
+.themes .btn{
+      width: 25px;
+      height: 25px;
+      border: 2px solid #FFF;
+      outline: none;
+      background: var(--clr);
+      box-shadow: 0 0 10px var(--clr), 0 0 20px var(--clr), 0 0 30px var(--clr);
+      scale: 0.9;
+      cursor: pointer;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      transition: 0.3s ease;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+}
+
+.themes .btn.active{
+      scale: 1.2;
+      border: 2px solid var(--clr);
+}
